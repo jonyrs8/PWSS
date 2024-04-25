@@ -19,3 +19,8 @@ Route::get('/', function () {
 
 Route::get('/admin', 'App\Http\Controllers\AdminController@index');
 Route::resource('/admin/category','App\Http\Controllers\CategoryController');
+Route::resource('/admin/product','App\Http\Controllers\ProductController');
+Route::resource('/admin/brand','App\Http\Controllers\BrandController');
+Route::resource('/admin/color','App\Http\Controllers\ColorController');
+Route::resource('/admin/size','App\Http\Controllers\SizeController');
+Route::resource('/admin/unit','App\Http\Controllers\UnitController');
